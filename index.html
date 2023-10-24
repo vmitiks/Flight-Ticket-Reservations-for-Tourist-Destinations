@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/icons/favicon.svg"/>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>FlyEasy - Onlie Avia Tickets</title>
+</head>
+<body>
+    <header>
+        <div class="header-actions-wrapper">
+            <div class="logo"></div>
+            <div class="header-links">
+                <a href="./html-pages/hotels.html">Hotels</a>
+                <a href="./html-pages/flights.html">Flights</a>
+                <a href="./html-pages/cities.html">Cities briefly</a>
+                <a href="./html-pages/questions.html">Q&A</a>
+                <a href="./html-pages/support.html">Support</a>
+            </div>
+        </div>
+        <div class="profile">
+            <div id="user-img"></div>
+            <a href="./html-pages/profile.html">Profile</a>
+        </div>
+        
+    </header>
+    <div class="booking-container">
+        <h1>Find the cheapiest tickets to travel <br/>
+            easy with <span class="row-2">FlyEasy</span></h1>
+        <form id="flights-search-bar">
+            <select name="From" id="From">
+                <option value="Default">From</option>
+                <option value="Berlin" id="from-germany-berlin">Germany - Berlin</option>
+                <option value="Cologne" id="from-germany-cologne">Germany - Cologne</option>
+                <option value="Paris" id="from-france-paris">France - Paris</option>
+                <option value="Lyon" id="from-france-Lyon">France - Lyon</option>
+            </select>
+            <select name="To" id="To">
+                <option value="Default">To</option>
+                <option value="Berlin" id="from-germany-berlin">Germany - Berlin</option>
+                <option value="Cologne" id="from-germany-cologne">Germany - Cologne</option>
+                <option value="Paris" id="from-france-paris">France - Paris</option>
+                <option value="Lyon" id="from-france-Lyon">France - Lyon</option>
+            </select>
+            <input id="depart" name="Depart" placeholder="Depart" type="text" 
+                onclick="this.type='date'" 
+                onblur="if(this.value==''){this.type='text'}"
+            >
+            <input id="return" name="Return" placeholder="Return" type="text" 
+                onclick="this.type='date'" 
+                onblur="if(this.value==''){this.type='text'}"
+            >
+            <select name="Class" id="FlughtClass">
+                <option value="Default">Class</option>
+                <option value="1">Econom</option>
+                <option value="2">Buisiness</option>
+            </select>
+             <select name="Passangers" id="Passangers">
+                <option value="Default">Passangers</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <button type="submit" class="search"><img src="./assets/icons/search-md.svg" alt=""></button>
+        </form>
+    </div>
+    <div class="popular-boards">
+        <h4>The Most popular directions</h4>
+        <div class="popular-flights-container">
+            <div class="flight-card">
+                <div class="flight-card-img"></div>
+                <div class="flight-card-text-wrapper">
+                    <h4>Krakow</h4>
+                    <p class="place">from Belgrade</p>
+                    <p class="price">185 €</p>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flight-card-img"></div>
+                <div class="flight-card-text-wrapper">
+                    <h4>Moscow</h4>
+                    <p class="place">from Stambul</p>
+                    <p class="price">140 €</p>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flight-card-img"></div>
+                <div class="flight-card-text-wrapper">
+                    <h4>New York</h4>
+                    <p class="place">from London</p>
+                    <p class="price">635 €</p>
+                </div>
+            </div>
+            <div class="flight-card">
+                <div class="flight-card-img"></div>
+                <div class="flight-card-text-wrapper">
+                    <h4>Tokyo</h4>
+                    <p class="place">from Dubai</p>
+                    <p class="price">710 €</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="impressions">
+        <h1>Impression</h1>
+        <div class="impression-container">
+            <div class="impression-img"></div>
+            <div class="immpression-cta">
+                <h4>Collect impressions <br/> and miles</h4>
+                <p>We have collected fun excursions, <br/> exclusive tours and topevents for you.</p>
+                <button class="primary-btn">Forward!</button>
+            </div>
+        </div>
+    </div>
+    <div class="blog">
+        <h1>Read more about travelling</h1>
+        <div class="blog-cards">
+            <div class="blog-card-content blog-card-1">
+                <div class="tag">New</div>
+                <a href="./html-pages/seebelgrade.html">
+                <h4>What to see in Belgrade</h4>
+                </a>
+            </div>
+        <div class="right-side-blog-wrapper">
+            <div class="blog-wrapper">
+                <div class="blog-card-content blog-card-2">
+                    <a href="./html-pages/savemoney.html">
+                    <h4>How to save money while traveling</h4>
+                    </a>
+                </div>
+                <div class="blog-card-content blog-card-3">
+                    <a href="#">
+                    <h4>Where to eat deliciously in New York</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-card-content blog-card-4">
+                <a href="#">
+                <h4>Where to go in the Apls</h4>
+                </a>
+            </div>
+        </div>
+        </div>  
+    </div>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-links">
+                <img class="logo logo-footer" src="./assets/icons/logoWhBg.svg"/>
+                <div class="nav">
+                    <h3>Help</h3>
+                    <a href="./html-pages/questions.html">Q&A</a>
+                    <a href="./html-pages/support.html">Support</a>
+                    <a href="./html-pages/cities.html">Citites Briefly</a>
+                </div>
+                <div class="nav">
+                    <h3>Service</h3>
+                    <a href="./html-pages/hotels.html">Hotels</a>
+                    <a href="./html-pages/flights.html">Flights</a>
+                </div>
+            </div>
+            <form id="subscribe-form">
+                <h4>Subscribe to promotions</h4>
+                <p>Discounts on air tickets and ofers from FlyEasy.io will come to your email:</p>
+                <input id="email" type="email" name="email" placeholder="E-Mail">
+                <button class="btn-secondary" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+
+
+const formElement = document.getElementById('flights-search-bar'); // извлекаем элемент формы
+formElement.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
+  const From = formData.get('From');
+  const To = formData.get('To'); 
+  const Depart = formData.get('Depart'); 
+  const Return = formData.get('Return'); 
+  const Passangers = formData.get('Passangers'); 
+  const Class = formData.get('Class'); 
+  const Data = {
+    "From": From,
+    "To": To,
+    "Depart":Depart,
+    "Return": Return,
+    "Class": Class,
+    "Passangers": Passangers
+  }
+  if (From=="Default" || To=="Default" || Depart=='' || Return=='' || Passangers=="Default" || Class=="Default") {
+
+    console.error('All fields must be filled')
+    } else
+        localStorage.setItem ("Data", JSON.stringify(Data));
+        console.log(Data);
+        window.location.href = './html-pages/flights.html';
+});
+
+
+const formEmail = document.getElementById('subscribe-form'); 
+formEmail.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailData = new FormData(formEmail); 
+
+  const Email = emailData.get('email');
+
+  const EmailData = {
+    "Email": Email
+   } 
+   if (Email=='') console.error('Email cant be empty'); else console.log(EmailData);
+   
+});
+</script>
