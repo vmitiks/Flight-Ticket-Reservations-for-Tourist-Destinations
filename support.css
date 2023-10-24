@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+#subscribe-form{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-top: 36px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e8ecf141;
+    border-radius: 1rem;
+    margin-top: 164px;
+}
+#subscribe-form>h4{
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#subscribe-form>p{
+    font-size: 14px;
+    margin-bottom: 64px;
+    color: #888;
+    font-weight: 400;
+    text-align: center;
+}
+#subscribe-form>input, textarea{
+    height: 48px;
+    border: 0;
+    padding-left: 4px;
+    background: #e8ecf183;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    resize: none; 
+}
+#subscribe-form>button{
+    width: auto;
+    background-color: #0c75fe1f;
+    border: 1px solid #0c73fe;
+    color: #0c73fe;
+    font-size:16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+}
+
+textarea{
+    padding: 12px;
+    height: 200px;
+}
+header{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-container>h1{
+    font-size: 48px;
+    color: white;
+}
+.header-actions-wrapper{
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+    background-image: url(../assets/icons/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 64px;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+}
+.header-links>a{
+    margin-right: 32px;
+    height: fit-content;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile>a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#user-img{
+    background-image: url(../assets/img/portrait.avif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}

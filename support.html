@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.svg"/>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/support.css">
+    <title>Support</title>
+</head>
+<body>
+    <header>
+        <div class="header-actions-wrapper">
+            <a class="logo" href="../index.html"></a>
+            <div class="header-links">
+                <a href="./hotels.html">Hotels</a>
+                <a href="./flights.html">Flights</a>
+                <a href="./cities.html">Cities briefly</a>
+                <a href="./questions.html">Q&A</a>
+                <a href="./support.html">Support</a>
+            </div>
+        </div>
+        <div class="profile">
+            <div id="user-img"></div>
+            <a href="./profile.html">Profile</a>
+        </div>
+        
+    </header>
+    <form id="subscribe-form">
+        <h4>Have any questions or need help?</h4>
+        <p>Contact with our customer service, describe your problem and get help!</p>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="email" id="email" name="email" placeholder="E-Mail">
+        <textarea placeholder="Enter your message" id="message" name="message" cols="30" rows="10"></textarea>
+        <button class="btn-secondary" type="submit">Subscribe</button>
+    </form>
+   
+</body>
+</html>
+<script>
+
+const formElement = document.getElementById('subscribe-form'); 
+formElement.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(formElement); 
+
+  const Username = formData.get('username');
+  const Email = formData.get('email');
+  const Message = formData.get('message');
+
+  const Data = {
+    "Username": Username,
+    "Email": Email,
+    "Message": Message
+  } 
+  if (Email === '' || Username === '' || Message === '') {
+    console.error('Form can\'t be empty');
+  } else {
+    console.log(Data);
+  }
+});
+
+
+</script>

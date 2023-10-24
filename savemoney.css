@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-container>h1{
+    font-size: 45px;
+    color: white;
+}
+.header-actions-wrapper{
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+    background-image: url(../assets/icons/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 64px;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+}
+.header-links>a{
+    margin-right: 32px;
+    height: fit-content;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile>a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#user-img{
+    background-image: url(../assets/img/portrait.avif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+.container1 {
+    background-color: blue; 
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold; 
+    padding: 20px; 
+}
+
+.container1 p {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.center2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.center2 p {
+    flex: 1;
+}
+button#moreButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Здесь можно регулировать ширину модального окна */
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input#emailInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#submitButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+

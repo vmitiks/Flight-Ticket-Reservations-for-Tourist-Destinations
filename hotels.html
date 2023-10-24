@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.svg"/>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/hotels.css">
+    <title>Book a hotel</title>
+</head>
+<body>
+    <header>
+        <div class="header-actions-wrapper">
+            <a class="logo" href="../index.html"></a>
+            <div class="header-links">
+                <a href="./hotels.html">Hotels</a>
+                <a href="./flights.html">Flights</a>
+                <a href="./cities.html">Cities briefly</a>
+                <a href="./questions.html">Q&A</a>
+                <a href="./support.html">Support</a>
+            </div>
+        </div>
+        <div class="profile">
+            <div id="user-img"></div>
+            <a href="./profile.html">Profile</a>
+        </div>
+        
+    </header>
+    <div class="booking-container">
+            <form id="flights-search-bar">
+            <select name="From" id="From">
+                <option id="fromId" value="Default">yy</option>
+            </select>
+            <select name="To" id="To">
+                <option value="Berlin" id="ToId">Germany - Berlin</option>
+            </select>
+            <input id="DepartId" name="Depart" placeholder="Depart" >
+            <input id="ReturnId" name="Return" >
+            <select name="Class" id="FlightClass">
+                <option id="ClassId">Class</option>
+            </select>
+             <select name="Passangers" id="Passangers">
+                <option value="1" id="PassangersId">1</option>
+            </select>
+            <button  class="search"><img src="../assets/icons/search-md.svg" alt=""></button>
+        </form>
+    </div>
+    <div class="hotels">
+        <div class="hotels-container">
+            <div class="HotelsTitle">Most sutable hotels in <h2 id="hotelInCity">Rome</h2></div>
+            <div class="divider"></div>
+            <div class="hotel">
+                <div class="hotel-img frHotel"></div>
+                <div class="hotel-title">
+                    <h4>Hotel La Cruuj</h4>
+                    <p>str. Niceeine 34</p>
+                    <div class="rate"><img src="../assets/icons/rate.svg" alt="">4.5</div>
+                    <h5> form 240 EUR / per person</h5>
+                </div>
+            </div>
+            <div class="hotel">
+                <div class="hotel-img"></div>
+                <div class="hotel-title">
+                    <h4>Hotel Old Munchin</h4>
+                    <p>str. Austian 9B</p>
+                    <div class="rate"><img src="../assets/icons/rate.svg" alt="">4.5</div>
+                    <h5> form 500 EUR / per person</h5>
+                </div>
+            </div>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49942.89046621707!2d2.3466264954009803!3d48.86202697222266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z0J_QsNGA0LjQtiwg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2s!4v1698008990818!5m2!1sru!2s" width="1400px" height="911" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>
+<script>
+    const Data = JSON.parse(localStorage.getItem("Data"));
+    console.log(Data);
+    document.getElementById("fromId").innerHTML=Data.From;
+    document.getElementById("ToId").innerHTML=Data.To;
+    document.getElementById("DepartId").value=Data.Depart;
+    document.getElementById("ReturnId").value=Data.Return;
+    document.getElementById("ClassId").innerHTML=Data.Class;
+    document.getElementById("PassangersId").innerHTML=Data.Passangers;
+    document.getElementById("hotelInCity").innerHTML=Data.To;
+ </script>

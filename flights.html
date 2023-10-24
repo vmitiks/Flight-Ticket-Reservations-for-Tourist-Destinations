@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../assets/icons/favicon.svg"/>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/flights.css">
+    <title>Accesseble Flights</title>
+</head>
+<body>
+    <header>
+        <div class="header-actions-wrapper">
+            <a class="logo" href="../index.html"></a>
+            <div class="header-links">
+                <a href="./hotels.html">Hotels</a>
+                <a href="./flights.html">Flights</a>
+                <a href="./cities.html">Cities briefly</a>
+                <a href="./questions.html">Q&A</a>
+                <a href="./support.html">Support</a>
+            </div>
+        </div>
+        <div class="profile">
+            <div id="user-img"></div>
+            <a href="./profile.html">Profile</a>
+        </div>
+        
+    </header>
+    <div class="booking-container">
+            <form id="flights-search-bar">
+            <select name="From" id="From">
+                <option id="fromId" value="Default">yy</option>
+            </select>
+            <select name="To" id="To">
+                <option value="Berlin" id="ToId">Germany - Berlin</option>
+            </select>
+            <input id="DepartId" name="Depart" placeholder="Depart" >
+            <input id="ReturnId" name="Return" >
+            <select name="Class" id="FlightClass">
+                <option id="ClassId">Class</option>
+            </select>
+             <select name="Passangers" id="Passangers">
+                <option value="1" id="PassangersId">1</option>
+            </select>
+            <button  class="search"><img src="../assets/icons/search-md.svg" alt=""></button>
+        </form>
+    </div>
+    <div class="select-flight">
+        <div class="title">Choose depart time at  <span id="title-date"> june 11</span></div>
+        <div class="options">
+            <div class="flight">
+                <div class="companyLogoContainer">
+                <img class="companyLogo" src="../assets/icons/S7.svg"/>
+                    <p>S7 Airlines</p>
+                    <div class="tag">Direct Flight</div>
+                </div>
+                <div class="flight-time">
+                    <div class="left-time">
+                        <h3>08:35</h5>
+                        <p class="depart-date" id="depart-date-1">june 11</p>
+                    </div>
+                    <div class="divider-container">
+                        <div class="divider"></div>
+                        <p>5h 35min</p>
+                    </div>
+                    <div class="right-time">
+                        <h3>19:40</h5>
+                        <p class="depart-date" id="depart-date-2">june 11</p>
+                    </div>
+                </div>
+                <div class="plane-tag">
+                    <img class="companyLogo" src="../assets/icons/S7.svg"/>
+                    <p>S7 3749</p>
+                    <p>Boeing 737-800</p>
+                </div>
+            </div>
+            <div class="option-1">
+                <div class="flight-type">
+                    <p>Basic Econom</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCaseNotAllowed.svg">
+                </div>
+                <h2>110 €</h2>
+            </div>
+            <div class="option-2">
+                <div class="flight-type">
+                    <p>Standart Econom</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCase.svg">
+                </div>
+                <h2>230 €</h2>
+            </div>
+            <div class="option-3">
+                <div class="flight-type">
+                    <p>Econom Plus</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCase.svg">
+                    <img src="../assets/icons/specialPlace.svg">
+                </div>
+                <h2>370 €</h2>
+            </div>
+        </div>
+    </div>
+    <div class="select-flight">
+        <div class="options">
+            <div class="flight">
+                <div class="companyLogoContainer">
+                <img class="companyLogo" src="../assets/icons/S7.svg"/>
+                    <p>S7 Airlines</p>
+                    <div class="tag">Direct Flight</div>
+                </div>
+                <div class="flight-time">
+                    <div class="left-time">
+                        <h3>14:35</h5>
+                        <p class="depart-date" id="depart-date-3">june 11</p>
+                    </div>
+                    <div class="divider-container">
+                        <div class="divider"></div>
+                        <p>4h 40min</p>
+                    </div>
+                    <div class="right-time">
+                        <h3>20:50</h5>
+                        <p class="depart-date" id="depart-date-4">june 11</p>
+                    </div>
+                </div>
+                <div class="plane-tag">
+                    <img class="companyLogo" src="../assets/icons/S7.svg"/>
+                    <p>S7 3899</p>
+                    <p>Boeing 737-800</p>
+                </div>
+            </div>
+            <div class="option-1">
+                <div class="flight-type">
+                    <p>Basic Econom</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCaseNotAllowed.svg">
+                </div>
+                <h2>160 €</h2>
+            </div>
+            <div class="option-2">
+                <div class="flight-type">
+                    <p>Standart Econom</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCase.svg">
+                </div>
+                <h2>280 €</h2>
+            </div>
+            <div class="option-3">
+                <div class="flight-type">
+                    <p>Econom Plus</p>
+                    <img src="../assets/icons/bag.svg">
+                    <img src="../assets/icons/SmallCase.svg">
+                    <img src="../assets/icons/specialPlace.svg">
+                </div>
+                <h2>420 €</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ <script>
+    const Data = JSON.parse(localStorage.getItem("Data"));
+    console.log(Data);
+    document.getElementById("fromId").innerHTML=Data.From;
+    document.getElementById("ToId").innerHTML=Data.To;
+    document.getElementById("DepartId").value=Data.Depart;
+    document.getElementById("ReturnId").value=Data.Return;
+    document.getElementById("ClassId").innerHTML=Data.Class;
+    document.getElementById("PassangersId").innerHTML=Data.Passangers;
+    document.getElementById("title-date").innerHTML=Data.Depart;
+    document.getElementById("depart-date-1").innerHTML=Data.Depart;
+    document.getElementById("depart-date-2").innerHTML=Data.Depart;
+    document.getElementById("depart-date-3").innerHTML=Data.Depart;
+    document.getElementById("depart-date-4").innerHTML=Data.Depart;
+ </script>

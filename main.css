@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking-container>h1{
+    font-size: 45px;
+    color: white;
+}
+.header-actions-wrapper{
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: 40px;
+    background-image: url(../assets/icons/logo.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 64px;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+}
+.header-links>a{
+    margin-right: 32px;
+    height: fit-content;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile>a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#user-img{
+    background-image: url(../assets/img/portrait.avif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+}
+.booking-container{
+    width: 90vw;
+    height: 460px;
+    padding: 36px;
+    border-radius: 12px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 48px;
+    background-image: url(../assets/img/TravelBg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#flights-search-bar{
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    border-radius:12px;
+}
+#flights-search-bar>input, #flights-search-bar>select, #return, #depart{
+    width: 224px;
+    height: 64px;
+    margin-right: 2px;
+    outline: none;
+    border: 0;
+    background:white;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+#flights-search-bar>select:nth-child(1){
+    border-radius: 12px 0 0 12px;
+}
+.search{
+    width: 100px;
+    border: 0;
+    background-color: #0c73fe;
+    border-radius: 0 12px 12px  0;
+}
+.booking-container>h1{
+    width: 80%;
+    font-size: 64px;
+    font-weight: 600;
+    line-height :140%;
+}
+.popular-boards, .impressions, .blog, footer{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: center;
+    margin-top: 64px;
+    padding: 36px;
+}
+.popular-boards>h4, .impressions>h1{
+     width: 80%;
+     font-size: 32px;
+     margin-top: 0;
+}
+.popular-flights-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+.flight-card{
+    display: flex;
+    height: fit-content;
+    width: 300px;
+    padding:10px;
+    border-radius: 1rem;
+    border: 1px solid #D4D4D4;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.flight-card-img{
+    height: 100px;
+    width: 100px;
+    background-color: #D4D4D4;
+    border-radius: 12px;
+    background-position: center;
+    background-size: cover;
+}
+.flight-card-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.place{
+    font-size: 15px;
+    color: #666;
+}
+.price{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.flight-card-text-wrapper>h4{
+    display: flex;
+    margin: 0;
+}
+.flight-card:nth-child(1)>.flight-card-img{
+    background-image: url(../assets/img/krakow.jpg);
+}
+.flight-card:nth-child(2)>.flight-card-img{
+    background-image: url(../assets/img/moscow.jpg);
+}
+.flight-card:nth-child(3)>.flight-card-img{
+    background-image: url(../assets/img/NewYork.jpg);
+}
+.flight-card:nth-child(4)>.flight-card-img{
+    background-image: url(../assets/img/tokyo.jfif);
+}
+.flight-card:nth-child(2), .flight-card:nth-child(3){
+ margin-left: 20px;
+ margin-right: 20px;
+}
+.impression-container{
+    width: 80%;
+    height: 280px;
+    border-radius:1rem ;
+    border: 1px solid #D4D4D4;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.impressions{
+    margin-top: 0px;
+}
+.impression-img{
+    background-image: url(../assets/img/Insp-cover.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 66%;
+    height: 280px;
+    border-radius:1rem 0 0 1rem ;
+}
+.immpression-cta{
+    width: 34%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 64px 0 64px;
+    justify-content: center;
+}
+.immpression-cta>h4{
+ font-size: 24px;
+ margin-bottom: 24px;
+ margin-top: 0;
+}
+.immpression-cta>p{
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+.primary-btn, .subscribe-form>button{
+    border: 0;
+    width: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #0c73fe;
+    color: white;
+    font-size: 16px;
+}
+.blog{
+    justify-content: center;
+}
+.blog-cards{
+    width: 80%;
+    display: flex;
+}
+.blog-card-content a{
+    display: block;
+    text-decoration: none;
+}
+.right-side-blog-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 50%;
+}
+.blog-wrapper{
+    display: flex;
+}
+.blog-card-2{
+    width: 50%;
+    height: 250px;
+    background-color: #D4D4D4;
+    margin-right: 20px;
+    border-radius: 1rem;
+    background-image: url(../assets/img/economy.jpg);
+}
+.blog-card-3{
+    width: 50%;
+    height: 250px;
+    background-color: #D4D4D4;
+    border-radius: 1rem;
+    background-image: url(../assets/img/nyfood.jpg);
+}
+.blog-card-4{
+    width: 100%;
+    height: 250px;
+    background-color: #9999;
+    margin-top: 20px;
+    border-radius: 1rem;
+    background-image: url(../assets/img/alps.jpg);
+}
+.blog-card-content{
+    padding:24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+.blog-card-content:hover {
+    transform: scale(1.1); 
+}
+.blog-card-content:active > a {
+    color: #c4c6e6; 
+}
+
+.blog-card-content>a{
+    color: white;
+    font-size: 36px;
+    margin: 0;
+    font-weight: 500;
+}
+.blog-card-2>a, .blog-card-3>a{
+    font-size: 20px;
+    color: #ffffff;
+}
+.tag{
+    padding:  4px 16px 4px 16px;
+    background-color: blue;
+    width: fit-content;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.blog-card-1{
+    width: 50%;
+    height: 520px;
+    background-color: #D4D4D4;
+    border-radius: 1rem;
+    justify-content: space-between;
+    background-image: url(../assets/img/belgrade.jpg);
+}
+.blog>h1{
+    width: 80%;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+footer{
+   padding: 0;
+   padding-left: 36px;
+   padding-right: 36px; 
+   
+}
+.nav{
+    display: flex;
+    height: fit-content;
+    margin-top: auto;
+    flex-direction: column;
+    width: max-content;
+    margin-right: 64px;
+}
+.nav:nth-child(3){
+    margin-top: 0;
+}
+.nav>a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+    margin-right: 36px;
+    margin-bottom: 16px;
+}
+#subscribe-form{
+    width: 280px;
+    margin-left: auto;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    background: #0c73fe;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 36px;
+    width: 80%;
+}
+#subscribe-form{
+    display: flex;
+    flex-direction: column;
+}
+#subscribe-form>h4{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+    color: white;
+}
+#subscribe-form>p{
+    font-size: 14px;
+    margin-bottom: 48px;
+    color: #ffffff85;
+    font-weight: 400;
+}
+#subscribe-form>input{
+    height: 48px;
+    border: 0;
+    padding-left: 4px;
+    background: rgba(232, 236, 241, 0.445);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    color: white;
+    outline: none;
+    font-weight: 600;
+}
+#subscribe-form>button{
+    width: auto;
+    background-color: #ffffff2f;
+    border: 1px solid #0c73fe;
+    color: #ffffff;
+    font-size:16px;
+    padding-top: 12px;
+    font-weight: 400px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+#subscribe-form>button:hover{
+    transition: 0.3s ease-in;
+    background-color: #ffffff60;
+}
+.nav>h3{
+    color: white;
+    margin-top: 0;
+}
+#Passangers{
+    margin-right: 16px;
+}
+.footer-links{
+    display: flex;
+}
+.footer-links>.logo{
+    margin-right: 128px;
+}
+input#email::placeholder{
+    color: rgba(255, 255, 255, 0.63);
+}
+.logo-footer{
+    background: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 0;
+}
+.row-2{
+    font-size: 75px;
+    font-weight: 300;
+
+}

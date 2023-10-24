@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/icons/favicon.svg"/>
+    <link rel="stylesheet" href="../css/savemoney.css">
+    <title>How to save money while travelling?</title>
+</head>
+<body>
+    <header>
+        <div class="header-actions-wrapper">
+            <div class="logo"></div>
+            <div class="header-links">
+                <a href="./html-pages/hotels.html">Hotels</a>
+                <a href="./html-pages/flights.html">Flights</a>
+                <a href="./html-pages/cities.html">Cities briefly</a>
+                <a href="./html-pages/questions.html">Q&A</a>
+                <a href="./html-pages/support.html">Support</a>
+            </div>
+        </div>
+        <div class="profile">
+            <div id="user-img"></div>
+            <a href="./html-pages/profile.html">Profile</a>
+        </div>
+        
+    </header>
+    <div class="container1">
+        <p>How to save money while travelling?</p>
+    </div>
+    <div class ="container2">
+        <div class="center2">
+            <h1>Plan Your Trip in Advance:</h1>
+            <p>Planning your trip well in advance allows you to take advantage of early booking discounts for flights, accommodation, and attractions.</p>
+        </div>
+        <div class="center2">
+            <h1>Travel Off-Peak:</h1>
+            <p>Traveling during off-peak seasons often means lower prices for flights and accommodations. Plus, you'll avoid crowds.</p>
+        </div>
+        <div class="center2">
+            <h1>Use Fare Comparison Websites:</h1>
+            <p>Use websites and apps to compare fares for flights, hotels, and rental cars to find the best deals.</p>
+        </div>
+        <div class="center2">
+            <h1>Travel Light: </h1>
+            <p>Pack only what you need to avoid extra baggage fees. Consider packing versatile clothing that you can mix and match.</p>
+        </div>
+        <div class="center2">
+            <h1>Cook Your Meals:</h1>
+            <p>Eating out can be expensive. If possible, book accommodations with kitchens and prepare some of your meals. It's also a great way to explore local markets and try local ingredients.</p>
+        </div>
+        <div class="center2">
+            <h1>Use Public Transportation:</h1>
+            <p>Opt for public transportation like buses or trains instead of taxis or rental cars. It's often cheaper and gives you a chance to experience local culture.</p>
+        </div>
+        <div class="center2">
+            <h1>Travel Insurance: </h1>
+            <p>While it's an added expense, having travel insurance can save you money if unexpected events like trip cancellations or medical emergencies occur.</p>
+        </div>
+        <div class="center2">
+            <h1>Free Attractions:</h1>
+            <p>Look for free or low-cost attractions and activities. Many cities have museums, parks, and landmarks that are free to visit.</p>
+        </div>
+    </div>
+    <button id="moreButton">More</button>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeButton">&times;</span>
+            <h2>Subscribe to our newsletter</h2>
+            <input type="email" id="emailInput" placeholder="Your Email">
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+<script>
+const modal = document.getElementById("myModal");
+const moreButton = document.getElementById("moreButton");
+const closeButton = document.getElementById("closeButton");
+const submitButton = document.getElementById("submitButton");
+
+moreButton.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+submitButton.addEventListener("click", () => {
+    const emailInput = document.getElementById("emailInput");
+    console.log("Email submitted: " + emailInput.value);
+    modal.style.display = "none";
+
+});
+
+</script>
+</body>
+</html>
